@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {pictureSettingsChanged = id; takeChannelFrom = id; }; 
+            CLASS = DBVidiPaletteController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                brightnessSlider = NSSlider; 
+                channelPopUp = NSPopUpButton; 
+                contrastSlider = NSSlider; 
+                hueControls = NSView; 
+                hueSlider = NSSlider; 
+                saturationSlider = NSSlider; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

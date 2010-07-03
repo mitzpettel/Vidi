@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {send = id; }; 
+            CLASS = AVCWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                checkbox = NSButton; 
+                cmd0 = NSTextField; 
+                cmd1 = NSTextField; 
+                cmd2 = NSTextField; 
+                cmd3 = NSTextField; 
+                cmd4 = NSTextField; 
+                cmd5 = NSTextField; 
+                cmd6 = NSTextField; 
+                cmd7 = NSTextField; 
+                response = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

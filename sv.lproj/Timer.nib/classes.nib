@@ -1,0 +1,45 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                addClicked = id; 
+                changeAudioFormatClicked = id; 
+                editClicked = id; 
+                jobCancelClicked = id; 
+                jobOKClicked = id; 
+                recurrenceMatrixChanged = id; 
+                removeClicked = id; 
+                selectFile = id; 
+                takeChannelFrom = id; 
+                timeFieldChanged = id; 
+            }; 
+            CLASS = DBTimerWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addButton = NSButton; 
+                audioFormatTextField = NSTextField; 
+                cautionImage = NSImageView; 
+                changeAudioFormatButton = NSButton; 
+                channelPopUp = NSPopUpButton; 
+                dayPopUp = NSPopUpButton; 
+                editButton = NSButton; 
+                endTimeField = NSTextField; 
+                fileTextField = NSTextField; 
+                infoTextField = NSTextField; 
+                jobSheet = NSPanel; 
+                overwriteCheckbox = NSButton; 
+                recurrenceMatrix = NSMatrix; 
+                removeButton = NSButton; 
+                scheduledMinutesTextField = NSTextField; 
+                selectButton = NSButton; 
+                splitCheckbox = NSButton; 
+                startDateField = NSTextField; 
+                startTimeField = NSTextField; 
+                tableView = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

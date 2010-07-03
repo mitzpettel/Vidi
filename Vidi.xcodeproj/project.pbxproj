@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37E96B150594CB92006C8822 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E96B140594CB92006C8822 /* SystemConfiguration.framework */; };
+		37F90A8705944BB800584C61 /* DBVidi.h in Headers */ = {isa = PBXBuildFile; fileRef = F560C4110274C4DA01681D24 /* DBVidi.h */; };
+		37F90A8805944BB800584C61 /* DBDVGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = 3772CD9903DDE8C000000005 /* DBDVGrabber.h */; };
+		37F90A8905944BB800584C61 /* DBDVView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3787689A03DE020F00000005 /* DBDVView.h */; };
+		37F90A8A05944BB800584C61 /* DBTVChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EAD27C03E3F2A400000005 /* DBTVChannel.h */; };
+		37F90A8B05944BB800584C61 /* DBSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 37641A9003E6F2E100000005 /* DBSlider.h */; };
+		37F90A8C05944BB800584C61 /* DBTVRemoteControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 37403FDE03E80BE500000005 /* DBTVRemoteControl.h */; };
+		37F90A8D05944BB800584C61 /* DBVidiWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 375CEE2103EC07BC00000005 /* DBVidiWindowController.h */; };
+		37F90A8E05944BB800584C61 /* DBRadioWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E30BCD03FBBE5300000005 /* DBRadioWindowController.h */; };
+		37F90A8F05944BB800584C61 /* ScreenSaverPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37304B7B0402E6FD00000005 /* ScreenSaverPrivate.h */; };
+		37F90A9005944BB800584C61 /* DBVidiServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 374E49FD0405945200000005 /* DBVidiServer.h */; };
+		37F90A9105944BB800584C61 /* NSDictionary-DBVidiJobAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 378EFFD5040B7A7000000005 /* NSDictionary-DBVidiJobAdditions.h */; };
+		37F90A9205944BB800584C61 /* DBTimerWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D2250E040D4E3500000005 /* DBTimerWindowController.h */; };
+		37F90A9305944BB800584C61 /* DBMediumWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3795D2A604252D0700000005 /* DBMediumWindowController.h */; };
+		37F90A9405944BB800584C61 /* DBButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B699940430C57700000005 /* DBButton.h */; };
+		37F90A9505944BB800584C61 /* DBVidiAboutPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B0DC300434ADE300000005 /* DBVidiAboutPanelController.h */; };
+		37F90A9605944BB800584C61 /* DBAudioCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 3760297A04D2F2EA00000005 /* DBAudioCompression.h */; };
+		37F90A9705944BB800584C61 /* DBVidiWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 377B12590577A5D200E01BC9 /* DBVidiWindow.h */; };
+		37F90A9905944BB800584C61 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		37F90A9A05944BB800584C61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		37F90A9B05944BB800584C61 /* Vidi.icns in Resources */ = {isa = PBXBuildFile; fileRef = 37403FD603E7F88800000005 /* Vidi.icns */; };
+		37F90A9C05944BB800584C61 /* audio.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37403FD803E7FE1800000005 /* audio.tif */; };
+		37F90A9D05944BB800584C61 /* no audio.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37403FDA03E7FEE500000005 /* no audio.tif */; };
+		37F90A9E05944BB800584C61 /* settings.tif in Resources */ = {isa = PBXBuildFile; fileRef = 370B8CE203EAE13100000005 /* settings.tif */; };
+		37F90A9F05944BB800584C61 /* brightness.tif in Resources */ = {isa = PBXBuildFile; fileRef = 375CEE1703EBE39200000005 /* brightness.tif */; };
+		37F90AA005944BB800584C61 /* contrast.tif in Resources */ = {isa = PBXBuildFile; fileRef = 375CEE1803EBE39200000005 /* contrast.tif */; };
+		37F90AA105944BB800584C61 /* saturation.tif in Resources */ = {isa = PBXBuildFile; fileRef = 375CEE1903EBE39200000005 /* saturation.tif */; };
+		37F90AA205944BB800584C61 /* window.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37C4CC4103EDB5FA00000005 /* window.tif */; };
+		37F90AA305944BB800584C61 /* rec light on.tif in Resources */ = {isa = PBXBuildFile; fileRef = 372C85CE03EE7EB600000005 /* rec light on.tif */; };
+		37F90AA405944BB800584C61 /* rec light off.tif in Resources */ = {isa = PBXBuildFile; fileRef = 372C85D003EE809F00000005 /* rec light off.tif */; };
+		37F90AA505944BB800584C61 /* VidiWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 37EDE5CC03FD200B00000005 /* VidiWindow.nib */; };
+		37F90AA605944BB800584C61 /* hue.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37557FE503FD98B600000005 /* hue.tif */; };
+		37F90AA805944BB800584C61 /* Timer.nib in Resources */ = {isa = PBXBuildFile; fileRef = 37FAA389040D218C00000005 /* Timer.nib */; };
+		37F90AA905944BB800584C61 /* Radio.nib in Resources */ = {isa = PBXBuildFile; fileRef = 37E30BE103FBBF6500000005 /* Radio.nib */; };
+		37F90AAA05944BB800584C61 /* rightarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 378494560424EA3600000005 /* rightarrow.png */; };
+		37F90AAB05944BB800584C61 /* leftarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 378494580424EB3300000005 /* leftarrow.png */; };
+		37F90AAC05944BB800584C61 /* button wells.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37067D700431A8A000000005 /* button wells.tif */; };
+		37F90AAD05944BB800584C61 /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DA9F1A04336C6A00000005 /* downarrow.png */; };
+		37F90AAE05944BB800584C61 /* uparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DA9F1B04336C6A00000005 /* uparrow.png */; };
+		37F90AAF05944BB800584C61 /* AboutPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 37B0DC2C0434AC2300000005 /* AboutPanel.nib */; };
+		37F90AB005944BB800584C61 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37330A9F0435CCD600000005 /* Localizable.strings */; };
+		37F90AB105944BB800584C61 /* caution.tif in Resources */ = {isa = PBXBuildFile; fileRef = 378D5368044C444400000005 /* caution.tif */; };
+		37F90AB305944BB800584C61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		37F90AB405944BB800584C61 /* DBVidi.m in Sources */ = {isa = PBXBuildFile; fileRef = F560C4120274C4DA01681D24 /* DBVidi.m */; };
+		37F90AB505944BB800584C61 /* DBDVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787689B03DE020F00000005 /* DBDVView.m */; };
+		37F90AB605944BB800584C61 /* DBTVChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EAD27D03E3F2A400000005 /* DBTVChannel.m */; };
+		37F90AB705944BB800584C61 /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 37641A9103E6F2E100000005 /* DBSlider.m */; };
+		37F90AB805944BB800584C61 /* DBTVRemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 37403FDF03E80BE500000005 /* DBTVRemoteControl.m */; };
+		37F90AB905944BB800584C61 /* DBVidiWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375CEE2203EC07BC00000005 /* DBVidiWindowController.m */; };
+		37F90ABA05944BB800584C61 /* NSDictionary-DBVidiJobAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 378EFFD6040B7A7000000005 /* NSDictionary-DBVidiJobAdditions.m */; };
+		37F90ABB05944BB800584C61 /* DBTimerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D2250F040D4E3500000005 /* DBTimerWindowController.m */; };
+		37F90ABC05944BB800584C61 /* DBRadioWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E30BCE03FBBE5300000005 /* DBRadioWindowController.m */; };
+		37F90ABD05944BB800584C61 /* DBMediumWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795D2A704252D0700000005 /* DBMediumWindowController.m */; };
+		37F90ABE05944BB800584C61 /* DBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B699950430C57700000005 /* DBButton.m */; };
+		37F90ABF05944BB800584C61 /* DBVidiAboutPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B0DC2F0434ADE300000005 /* DBVidiAboutPanelController.m */; };
+		37F90AC005944BB800584C61 /* DBAudioCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 3760297B04D2F2EA00000005 /* DBAudioCompression.m */; };
+		37F90AC105944BB800584C61 /* DBVidiWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 377B125A0577A5D200E01BC9 /* DBVidiWindow.m */; };
+		37F90AC305944BB800584C61 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		37F90AC405944BB800584C61 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F527C92302C90A9901000005 /* Carbon.framework */; };
+		37F90AC505944BB800584C61 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F560C4150274E9D901681D24 /* QuickTime.framework */; };
+		37F90AC605944BB800584C61 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37304B7D0402E7B200000005 /* ScreenSaver.framework */; };
+		37F90AC705944BB800584C61 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374DDCF20407C21C00000005 /* IOKit.framework */; };
+		37F90ACF05944BB800584C61 /* DBVidiServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 374E49FD0405945200000005 /* DBVidiServer.h */; };
+		37F90AD005944BB800584C61 /* DBDVGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = 3772CD9903DDE8C000000005 /* DBDVGrabber.h */; };
+		37F90AD105944BB800584C61 /* audio.h in Headers */ = {isa = PBXBuildFile; fileRef = 373943E203DB032700000005 /* audio.h */; };
+		37F90AD205944BB800584C61 /* DBVidiPaletteController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E4F562040831F300000005 /* DBVidiPaletteController.h */; };
+		37F90AD305944BB800584C61 /* DBTVChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EAD27C03E3F2A400000005 /* DBTVChannel.h */; };
+		37F90AD405944BB800584C61 /* LoginItemAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3748FE60040A8FB500000005 /* LoginItemAPI.h */; };
+		37F90AD505944BB800584C61 /* NSDictionary-DBVidiJobAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 378EFFD5040B7A7000000005 /* NSDictionary-DBVidiJobAdditions.h */; };
+		37F90AD705944BB800584C61 /* tuners.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37982AA503F68C7F00000005 /* tuners.plist */; };
+		37F90AD805944BB800584C61 /* Vidi.icns in Resources */ = {isa = PBXBuildFile; fileRef = 37403FD603E7F88800000005 /* Vidi.icns */; };
+		37F90AD905944BB800584C61 /* Palette.nib in Resources */ = {isa = PBXBuildFile; fileRef = 37E4F55B0408302100000005 /* Palette.nib */; };
+		37F90ADA05944BB800584C61 /* contrast.tif in Resources */ = {isa = PBXBuildFile; fileRef = 375CEE1803EBE39200000005 /* contrast.tif */; };
+		37F90ADB05944BB800584C61 /* brightness.tif in Resources */ = {isa = PBXBuildFile; fileRef = 375CEE1703EBE39200000005 /* brightness.tif */; };
+		37F90ADC05944BB800584C61 /* hue.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37557FE503FD98B600000005 /* hue.tif */; };
+		37F90ADD05944BB800584C61 /* saturation.tif in Resources */ = {isa = PBXBuildFile; fileRef = 375CEE1903EBE39200000005 /* saturation.tif */; };
+		37F90ADE05944BB800584C61 /* status problem.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37C58E3C040D0C3100000005 /* status problem.tif */; };
+		37F90ADF05944BB800584C61 /* status REC.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37C58E3D040D0C3100000005 /* status REC.tif */; };
+		37F90AE005944BB800584C61 /* status timer REC.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37C58E3E040D0C3100000005 /* status timer REC.tif */; };
+		37F90AE105944BB800584C61 /* status timer.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37C58E3F040D0C3100000005 /* status timer.tif */; };
+		37F90AE205944BB800584C61 /* status.tif in Resources */ = {isa = PBXBuildFile; fileRef = 37C58E40040D0C3100000005 /* status.tif */; };
+		37F90AE305944BB800584C61 /* server.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37330A9B0435C6F900000005 /* server.strings */; };
+		37F90AE505944BB800584C61 /* server_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37926E2203F3C40300000005 /* server_main.m */; };
+		37F90AE605944BB800584C61 /* DBDVGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3772CD9A03DDE8C000000005 /* DBDVGrabber.m */; };
+		37F90AE705944BB800584C61 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 373943E303DB032700000005 /* audio.c */; };
+		37F90AE805944BB800584C61 /* DBVidiServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 374E49FE0405945200000005 /* DBVidiServer.m */; };
+		37F90AE905944BB800584C61 /* DBVidiPaletteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E4F563040831F300000005 /* DBVidiPaletteController.m */; };
+		37F90AEA05944BB800584C61 /* DBTVChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EAD27D03E3F2A400000005 /* DBTVChannel.m */; };
+		37F90AEB05944BB800584C61 /* LoginItemAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3748FE5F040A8FB500000005 /* LoginItemAPI.m */; };
+		37F90AEC05944BB800584C61 /* NSDictionary-DBVidiJobAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 378EFFD6040B7A7000000005 /* NSDictionary-DBVidiJobAdditions.m */; };
+		37F90AEE05944BB800584C61 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		37F90AEF05944BB800584C61 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F527C92302C90A9901000005 /* Carbon.framework */; };
+		37F90AF005944BB800584C61 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374DDCF20407C21C00000005 /* IOKit.framework */; };
+		37F90AF705944BB800584C61 /* Vidi Server.app in Resources */ = {isa = PBXBuildFile; fileRef = 37F90AF305944BB800584C61 /* Vidi Server.app */; };
+		37F90DA005945EBA00584C61 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F90D9F05945EBA00584C61 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37F90AF505944BB800584C61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F90ACD05944BB800584C61;
+			remoteInfo = "Vidi Server (Upgraded)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		37067D700431A8A000000005 /* button wells.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "button wells.tif"; sourceTree = "<group>"; };
+		3709E096057FC5C800F429CB /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = French; path = French.lproj/ReadMe.rtfd; sourceTree = "<group>"; };
+		370B8CE203EAE13100000005 /* settings.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = settings.tif; sourceTree = "<group>"; };
+		372C85CE03EE7EB600000005 /* rec light on.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "rec light on.tif"; sourceTree = "<group>"; };
+		372C85D003EE809F00000005 /* rec light off.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "rec light off.tif"; sourceTree = "<group>"; };
+		372F606605E54F5A00C24443 /* sv */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = sv; path = sv.lproj/ReadMe.rtfd; sourceTree = "<group>"; };
+		37304B7B0402E6FD00000005 /* ScreenSaverPrivate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ScreenSaverPrivate.h; sourceTree = "<group>"; };
+		37304B7D0402E7B200000005 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = /System/Library/Frameworks/ScreenSaver.framework; sourceTree = "<absolute>"; };
+		37316CF90544439000000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = German; path = German.lproj/ReadMe.rtfd; sourceTree = "<group>"; };
+		37330A990435C6DA00000005 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/server.strings; sourceTree = "<group>"; };
+		37330A9D0435CCCA00000005 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		373943E203DB032700000005 /* audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio.h; sourceTree = "<group>"; };
+		373943E303DB032700000005 /* audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = audio.c; sourceTree = "<group>"; };
+		37403FD603E7F88800000005 /* Vidi.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Vidi.icns; sourceTree = "<group>"; };
+		37403FD803E7FE1800000005 /* audio.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = audio.tif; sourceTree = "<group>"; };
+		37403FDA03E7FEE500000005 /* no audio.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "no audio.tif"; sourceTree = "<group>"; };
+		37403FDE03E80BE500000005 /* DBTVRemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTVRemoteControl.h; sourceTree = "<group>"; };
+		37403FDF03E80BE500000005 /* DBTVRemoteControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTVRemoteControl.m; sourceTree = "<group>"; };
+		3748FE5F040A8FB500000005 /* LoginItemAPI.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LoginItemAPI.m; sourceTree = "<group>"; };
+		3748FE60040A8FB500000005 /* LoginItemAPI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LoginItemAPI.h; sourceTree = "<group>"; };
+		3748FE65040A8FB500000005 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		374DDCF20407C21C00000005 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		374E49FD0405945200000005 /* DBVidiServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBVidiServer.h; sourceTree = "<group>"; };
+		374E49FE0405945200000005 /* DBVidiServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBVidiServer.m; sourceTree = "<group>"; };
+		37557FE503FD98B600000005 /* hue.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = hue.tif; sourceTree = "<group>"; };
+		375CEE1703EBE39200000005 /* brightness.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = brightness.tif; sourceTree = "<group>"; };
+		375CEE1803EBE39200000005 /* contrast.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = contrast.tif; sourceTree = "<group>"; };
+		375CEE1903EBE39200000005 /* saturation.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = saturation.tif; sourceTree = "<group>"; };
+		375CEE2103EC07BC00000005 /* DBVidiWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBVidiWindowController.h; sourceTree = "<group>"; };
+		375CEE2203EC07BC00000005 /* DBVidiWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBVidiWindowController.m; sourceTree = "<group>"; };
+		3760297A04D2F2EA00000005 /* DBAudioCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAudioCompression.h; sourceTree = "<group>"; };
+		3760297B04D2F2EA00000005 /* DBAudioCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAudioCompression.m; sourceTree = "<group>"; };
+		37641A9003E6F2E100000005 /* DBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSlider.h; sourceTree = "<group>"; };
+		37641A9103E6F2E100000005 /* DBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSlider.m; sourceTree = "<group>"; };
+		3772CD9903DDE8C000000005 /* DBDVGrabber.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBDVGrabber.h; sourceTree = "<group>"; };
+		3772CD9A03DDE8C000000005 /* DBDVGrabber.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBDVGrabber.m; sourceTree = "<group>"; };
+		377B12590577A5D200E01BC9 /* DBVidiWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBVidiWindow.h; sourceTree = "<group>"; };
+		377B125A0577A5D200E01BC9 /* DBVidiWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBVidiWindow.m; sourceTree = "<group>"; };
+		377EE8F303F3A2FA00000005 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = English; path = English.lproj/ReadMe.rtfd; sourceTree = "<group>"; };
+		378494560424EA3600000005 /* rightarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightarrow.png; sourceTree = "<group>"; };
+		378494580424EB3300000005 /* leftarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftarrow.png; sourceTree = "<group>"; };
+		3787689A03DE020F00000005 /* DBDVView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBDVView.h; sourceTree = "<group>"; };
+		3787689B03DE020F00000005 /* DBDVView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBDVView.m; sourceTree = "<group>"; };
+		378D5368044C444400000005 /* caution.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = caution.tif; sourceTree = "<group>"; };
+		378EFFD5040B7A7000000005 /* NSDictionary-DBVidiJobAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-DBVidiJobAdditions.h"; sourceTree = "<group>"; };
+		378EFFD6040B7A7000000005 /* NSDictionary-DBVidiJobAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary-DBVidiJobAdditions.m"; sourceTree = "<group>"; };
+		3790FE6104DE91E500000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		3790FE6204DE91F800000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/VidiWindow.nib; sourceTree = "<group>"; };
+		3790FE6304DE920E00000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/Radio.nib; sourceTree = "<group>"; };
+		3790FE6404DE921C00000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/Timer.nib; sourceTree = "<group>"; };
+		3790FE6504DE922700000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/AboutPanel.nib; sourceTree = "<group>"; };
+		3790FE6604DE922E00000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3790FE6704DE923500000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3790FE6804DE924B00000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/Palette.nib; sourceTree = "<group>"; };
+		3790FE6904DE925100000005 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/server.strings; sourceTree = "<group>"; };
+		37926E2203F3C40300000005 /* server_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = server_main.m; sourceTree = "<group>"; };
+		3795D2A604252D0700000005 /* DBMediumWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMediumWindowController.h; sourceTree = "<group>"; };
+		3795D2A704252D0700000005 /* DBMediumWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMediumWindowController.m; sourceTree = "<group>"; };
+		37982AA503F68C7F00000005 /* tuners.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = tuners.plist; sourceTree = "<group>"; };
+		37B0DC2D0434AC2300000005 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/AboutPanel.nib; sourceTree = "<group>"; };
+		37B0DC2F0434ADE300000005 /* DBVidiAboutPanelController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBVidiAboutPanelController.m; sourceTree = "<group>"; };
+		37B0DC300434ADE300000005 /* DBVidiAboutPanelController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBVidiAboutPanelController.h; sourceTree = "<group>"; };
+		37B699940430C57700000005 /* DBButton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBButton.h; sourceTree = "<group>"; };
+		37B699950430C57700000005 /* DBButton.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBButton.m; sourceTree = "<group>"; };
+		37BA14BE043472FD00000005 /* AVCCommander.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = AVCCommander.nib; sourceTree = "<group>"; };
+		37BA14C00434730800000005 /* AVCWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AVCWindowController.h; sourceTree = "<group>"; };
+		37BA14C10434730800000005 /* AVCWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AVCWindowController.m; sourceTree = "<group>"; };
+		37C4CC4103EDB5FA00000005 /* window.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = window.tif; sourceTree = "<group>"; };
+		37C58E3C040D0C3100000005 /* status problem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status problem.tif"; sourceTree = "<group>"; };
+		37C58E3D040D0C3100000005 /* status REC.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status REC.tif"; sourceTree = "<group>"; };
+		37C58E3E040D0C3100000005 /* status timer REC.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status timer REC.tif"; sourceTree = "<group>"; };
+		37C58E3F040D0C3100000005 /* status timer.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status timer.tif"; sourceTree = "<group>"; };
+		37C58E40040D0C3100000005 /* status.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = status.tif; sourceTree = "<group>"; };
+		37CC66230A034C9E00CE4499 /* sv */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = sv; path = sv.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		37CC66260A034CA700CE4499 /* sv */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = sv; path = sv.lproj/VidiWindow.nib; sourceTree = "<group>"; };
+		37CC66290A034CAC00CE4499 /* sv */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = sv; path = sv.lproj/Radio.nib; sourceTree = "<group>"; };
+		37CC662C0A034CB000CE4499 /* sv */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = sv; path = sv.lproj/Timer.nib; sourceTree = "<group>"; };
+		37CC662F0A034CB400CE4499 /* sv */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = sv; path = sv.lproj/AboutPanel.nib; sourceTree = "<group>"; };
+		37CC66320A034CB800CE4499 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37CC66350A034CBB00CE4499 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37CC66380A034CC200CE4499 /* sv */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = sv; path = sv.lproj/Palette.nib; sourceTree = "<group>"; };
+		37D2250E040D4E3500000005 /* DBTimerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBTimerWindowController.h; sourceTree = "<group>"; };
+		37D2250F040D4E3500000005 /* DBTimerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBTimerWindowController.m; sourceTree = "<group>"; };
+		37DA9F1A04336C6A00000005 /* downarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downarrow.png; sourceTree = "<group>"; };
+		37DA9F1B04336C6A00000005 /* uparrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uparrow.png; sourceTree = "<group>"; };
+		37DC5FD705960AD3002EE300 /* Vidi_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vidi_Prefix.pch; sourceTree = "<group>"; };
+		37E30BCD03FBBE5300000005 /* DBRadioWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRadioWindowController.h; sourceTree = "<group>"; };
+		37E30BCE03FBBE5300000005 /* DBRadioWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRadioWindowController.m; sourceTree = "<group>"; };
+		37E30BE203FBBF6500000005 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Radio.nib; sourceTree = "<group>"; };
+		37E4F55C0408302100000005 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Palette.nib; sourceTree = "<group>"; };
+		37E4F562040831F300000005 /* DBVidiPaletteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBVidiPaletteController.h; sourceTree = "<group>"; };
+		37E4F563040831F300000005 /* DBVidiPaletteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBVidiPaletteController.m; sourceTree = "<group>"; };
+		37E96B140594CB92006C8822 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		37EAD27C03E3F2A400000005 /* DBTVChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTVChannel.h; sourceTree = "<group>"; };
+		37EAD27D03E3F2A400000005 /* DBTVChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTVChannel.m; sourceTree = "<group>"; };
+		37EDE5CD03FD200B00000005 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/VidiWindow.nib; sourceTree = "<group>"; };
+		37F3EBFC053EFC5D00000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		37F3EBFD053EFC7100000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/VidiWindow.nib; sourceTree = "<group>"; };
+		37F3EBFE053EFC7900000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/Radio.nib; sourceTree = "<group>"; };
+		37F3EBFF053EFC8000000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/Timer.nib; sourceTree = "<group>"; };
+		37F3EC00053EFC8700000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/AboutPanel.nib; sourceTree = "<group>"; };
+		37F3EC01053EFC9600000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37F3EC02053EFC9B00000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37F3EC03053EFCA000000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/Palette.nib; sourceTree = "<group>"; };
+		37F3EC04053EFCA600000005 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/server.strings; sourceTree = "<group>"; };
+		37F90ACA05944BB800584C61 /* Info_Vidi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Info_Vidi.plist; sourceTree = "<group>"; };
+		37F90ACB05944BB800584C61 /* Vidi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vidi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F90AF205944BB800584C61 /* Info_Vidi_Server.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info_Vidi_Server.plist; sourceTree = "<group>"; };
+		37F90AF305944BB800584C61 /* Vidi Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vidi Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F90D9F05945EBA00584C61 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		37FAA38A040D218C00000005 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Timer.nib; sourceTree = "<group>"; };
+		F527C92302C90A9901000005 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		F560C4110274C4DA01681D24 /* DBVidi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBVidi.h; sourceTree = "<group>"; };
+		F560C4120274C4DA01681D24 /* DBVidi.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DBVidi.m; sourceTree = "<group>"; };
+		F560C4150274E9D901681D24 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37F90AC205944BB800584C61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F90AC305944BB800584C61 /* Cocoa.framework in Frameworks */,
+				37F90AC405944BB800584C61 /* Carbon.framework in Frameworks */,
+				37F90AC505944BB800584C61 /* QuickTime.framework in Frameworks */,
+				37F90AC605944BB800584C61 /* ScreenSaver.framework in Frameworks */,
+				37F90AC705944BB800584C61 /* IOKit.framework in Frameworks */,
+				37F90DA005945EBA00584C61 /* OpenGL.framework in Frameworks */,
+				37E96B150594CB92006C8822 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F90AED05944BB800584C61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F90AEE05944BB800584C61 /* Cocoa.framework in Frameworks */,
+				37F90AEF05944BB800584C61 /* Carbon.framework in Frameworks */,
+				37F90AF005944BB800584C61 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				37B0DC2F0434ADE300000005 /* DBVidiAboutPanelController.m */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				37B699950430C57700000005 /* DBButton.m */,
+				3787689B03DE020F00000005 /* DBDVView.m */,
+				37EAD27D03E3F2A400000005 /* DBTVChannel.m */,
+				F560C4120274C4DA01681D24 /* DBVidi.m */,
+				375CEE2203EC07BC00000005 /* DBVidiWindowController.m */,
+				37641A9103E6F2E100000005 /* DBSlider.m */,
+				37403FDF03E80BE500000005 /* DBTVRemoteControl.m */,
+				37E30BCE03FBBE5300000005 /* DBRadioWindowController.m */,
+				37D2250F040D4E3500000005 /* DBTimerWindowController.m */,
+				3795D2A704252D0700000005 /* DBMediumWindowController.m */,
+				377B125A0577A5D200E01BC9 /* DBVidiWindow.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37E96B140594CB92006C8822 /* SystemConfiguration.framework */,
+				37F90D9F05945EBA00584C61 /* OpenGL.framework */,
+				F560C4150274E9D901681D24 /* QuickTime.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				F527C92302C90A9901000005 /* Carbon.framework */,
+				37304B7D0402E7B200000005 /* ScreenSaver.framework */,
+				374DDCF20407C21C00000005 /* IOKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37F90ACB05944BB800584C61 /* Vidi.app */,
+				37F90AF305944BB800584C61 /* Vidi Server.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CocoaSGDataProc2 */ = {
+			isa = PBXGroup;
+			children = (
+				37DC5FD705960AD3002EE300 /* Vidi_Prefix.pch */,
+				377FF4BB0402801B00000005 /* Headers */,
+				37926E2103F3C3CD00000005 /* Server */,
+				080E96DDFE201D6D7F000001 /* Client */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				3748FE5D040A8FB500000005 /* LoginItemsAPI */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				377EE8F103F3A2FA00000005 /* Documentation */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				37F90ACA05944BB800584C61 /* Info_Vidi.plist */,
+				37F90AF205944BB800584C61 /* Info_Vidi_Server.plist */,
+			);
+			name = CocoaSGDataProc2;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37403FD603E7F88800000005 /* Vidi.icns */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				37EDE5CC03FD200B00000005 /* VidiWindow.nib */,
+				37E30BE103FBBF6500000005 /* Radio.nib */,
+				37FAA389040D218C00000005 /* Timer.nib */,
+				37B0DC2C0434AC2300000005 /* AboutPanel.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				37330A9F0435CCD600000005 /* Localizable.strings */,
+				37403FD803E7FE1800000005 /* audio.tif */,
+				37403FDA03E7FEE500000005 /* no audio.tif */,
+				370B8CE203EAE13100000005 /* settings.tif */,
+				372C85CE03EE7EB600000005 /* rec light on.tif */,
+				372C85D003EE809F00000005 /* rec light off.tif */,
+				375CEE1703EBE39200000005 /* brightness.tif */,
+				375CEE1803EBE39200000005 /* contrast.tif */,
+				375CEE1903EBE39200000005 /* saturation.tif */,
+				37557FE503FD98B600000005 /* hue.tif */,
+				37C4CC4103EDB5FA00000005 /* window.tif */,
+				37DA9F1B04336C6A00000005 /* uparrow.png */,
+				37DA9F1A04336C6A00000005 /* downarrow.png */,
+				378494580424EB3300000005 /* leftarrow.png */,
+				378494560424EA3600000005 /* rightarrow.png */,
+				37067D700431A8A000000005 /* button wells.tif */,
+				378D5368044C444400000005 /* caution.tif */,
+				37E4F55B0408302100000005 /* Palette.nib */,
+				37BA14BE043472FD00000005 /* AVCCommander.nib */,
+				37C58E3C040D0C3100000005 /* status problem.tif */,
+				37C58E3D040D0C3100000005 /* status REC.tif */,
+				37C58E3E040D0C3100000005 /* status timer REC.tif */,
+				37C58E3F040D0C3100000005 /* status timer.tif */,
+				37C58E40040D0C3100000005 /* status.tif */,
+				37982AA503F68C7F00000005 /* tuners.plist */,
+				37330A9B0435C6F900000005 /* server.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3748FE5D040A8FB500000005 /* LoginItemsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				3748FE5F040A8FB500000005 /* LoginItemAPI.m */,
+				3748FE60040A8FB500000005 /* LoginItemAPI.h */,
+				3748FE65040A8FB500000005 /* readme.txt */,
+			);
+			path = LoginItemsAPI;
+			sourceTree = "<group>";
+		};
+		377EE8F103F3A2FA00000005 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				37316CF80544439000000005 /* ReadMe.rtfd */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		377FF4BB0402801B00000005 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				377B12590577A5D200E01BC9 /* DBVidiWindow.h */,
+				37B0DC300434ADE300000005 /* DBVidiAboutPanelController.h */,
+				37BA14C00434730800000005 /* AVCWindowController.h */,
+				3760297A04D2F2EA00000005 /* DBAudioCompression.h */,
+				37B699940430C57700000005 /* DBButton.h */,
+				3772CD9903DDE8C000000005 /* DBDVGrabber.h */,
+				3787689A03DE020F00000005 /* DBDVView.h */,
+				3795D2A604252D0700000005 /* DBMediumWindowController.h */,
+				37E30BCD03FBBE5300000005 /* DBRadioWindowController.h */,
+				37641A9003E6F2E100000005 /* DBSlider.h */,
+				37EAD27C03E3F2A400000005 /* DBTVChannel.h */,
+				37403FDE03E80BE500000005 /* DBTVRemoteControl.h */,
+				37D2250E040D4E3500000005 /* DBTimerWindowController.h */,
+				F560C4110274C4DA01681D24 /* DBVidi.h */,
+				37E4F562040831F300000005 /* DBVidiPaletteController.h */,
+				374E49FD0405945200000005 /* DBVidiServer.h */,
+				375CEE2103EC07BC00000005 /* DBVidiWindowController.h */,
+				378EFFD5040B7A7000000005 /* NSDictionary-DBVidiJobAdditions.h */,
+				37304B7B0402E6FD00000005 /* ScreenSaverPrivate.h */,
+				373943E203DB032700000005 /* audio.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		37926E2103F3C3CD00000005 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				37BA14C10434730800000005 /* AVCWindowController.m */,
+				3760297B04D2F2EA00000005 /* DBAudioCompression.m */,
+				3772CD9A03DDE8C000000005 /* DBDVGrabber.m */,
+				37926E2203F3C40300000005 /* server_main.m */,
+				373943E303DB032700000005 /* audio.c */,
+				374E49FE0405945200000005 /* DBVidiServer.m */,
+				37E4F563040831F300000005 /* DBVidiPaletteController.m */,
+				378EFFD6040B7A7000000005 /* NSDictionary-DBVidiJobAdditions.m */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		37F90A8605944BB800584C61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F90A8705944BB800584C61 /* DBVidi.h in Headers */,
+				37F90A8805944BB800584C61 /* DBDVGrabber.h in Headers */,
+				37F90A8905944BB800584C61 /* DBDVView.h in Headers */,
+				37F90A8A05944BB800584C61 /* DBTVChannel.h in Headers */,
+				37F90A8B05944BB800584C61 /* DBSlider.h in Headers */,
+				37F90A8C05944BB800584C61 /* DBTVRemoteControl.h in Headers */,
+				37F90A8D05944BB800584C61 /* DBVidiWindowController.h in Headers */,
+				37F90A8E05944BB800584C61 /* DBRadioWindowController.h in Headers */,
+				37F90A8F05944BB800584C61 /* ScreenSaverPrivate.h in Headers */,
+				37F90A9005944BB800584C61 /* DBVidiServer.h in Headers */,
+				37F90A9105944BB800584C61 /* NSDictionary-DBVidiJobAdditions.h in Headers */,
+				37F90A9205944BB800584C61 /* DBTimerWindowController.h in Headers */,
+				37F90A9305944BB800584C61 /* DBMediumWindowController.h in Headers */,
+				37F90A9405944BB800584C61 /* DBButton.h in Headers */,
+				37F90A9505944BB800584C61 /* DBVidiAboutPanelController.h in Headers */,
+				37F90A9605944BB800584C61 /* DBAudioCompression.h in Headers */,
+				37F90A9705944BB800584C61 /* DBVidiWindow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F90ACE05944BB800584C61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F90ACF05944BB800584C61 /* DBVidiServer.h in Headers */,
+				37F90AD005944BB800584C61 /* DBDVGrabber.h in Headers */,
+				37F90AD105944BB800584C61 /* audio.h in Headers */,
+				37F90AD205944BB800584C61 /* DBVidiPaletteController.h in Headers */,
+				37F90AD305944BB800584C61 /* DBTVChannel.h in Headers */,
+				37F90AD405944BB800584C61 /* LoginItemAPI.h in Headers */,
+				37F90AD505944BB800584C61 /* NSDictionary-DBVidiJobAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		37F90A8405944BB800584C61 /* Vidi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376DED2F0A022DCE008A94F7 /* Build configuration list for PBXNativeTarget "Vidi" */;
+			buildPhases = (
+				37F90A8605944BB800584C61 /* Headers */,
+				37F90A9805944BB800584C61 /* Resources */,
+				37F90AB205944BB800584C61 /* Sources */,
+				37F90AC205944BB800584C61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F90AF605944BB800584C61 /* PBXTargetDependency */,
+			);
+			name = Vidi;
+			productInstallPath = "($Home)/Applications";
+			productName = CocoaSGDataProc2;
+			productReference = 37F90ACB05944BB800584C61 /* Vidi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37F90ACD05944BB800584C61 /* Vidi Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376DED2B0A022DCE008A94F7 /* Build configuration list for PBXNativeTarget "Vidi Server" */;
+			buildPhases = (
+				37F90ACE05944BB800584C61 /* Headers */,
+				37F90AD605944BB800584C61 /* Resources */,
+				37F90AE405944BB800584C61 /* Sources */,
+				37F90AED05944BB800584C61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vidi Server";
+			productName = VidiServer;
+			productReference = 37F90AF305944BB800584C61 /* Vidi Server.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 376DED330A022DCE008A94F7 /* Build configuration list for PBXProject "Vidi" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				sv,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CocoaSGDataProc2 */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37F90A8405944BB800584C61 /* Vidi */,
+				37F90ACD05944BB800584C61 /* Vidi Server */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37F90A9805944BB800584C61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F90A9905944BB800584C61 /* MainMenu.nib in Resources */,
+				37F90A9A05944BB800584C61 /* InfoPlist.strings in Resources */,
+				37F90A9B05944BB800584C61 /* Vidi.icns in Resources */,
+				37F90A9C05944BB800584C61 /* audio.tif in Resources */,
+				37F90A9D05944BB800584C61 /* no audio.tif in Resources */,
+				37F90A9E05944BB800584C61 /* settings.tif in Resources */,
+				37F90A9F05944BB800584C61 /* brightness.tif in Resources */,
+				37F90AA005944BB800584C61 /* contrast.tif in Resources */,
+				37F90AA105944BB800584C61 /* saturation.tif in Resources */,
+				37F90AA205944BB800584C61 /* window.tif in Resources */,
+				37F90AA305944BB800584C61 /* rec light on.tif in Resources */,
+				37F90AA405944BB800584C61 /* rec light off.tif in Resources */,
+				37F90AA505944BB800584C61 /* VidiWindow.nib in Resources */,
+				37F90AA605944BB800584C61 /* hue.tif in Resources */,
+				37F90AA805944BB800584C61 /* Timer.nib in Resources */,
+				37F90AA905944BB800584C61 /* Radio.nib in Resources */,
+				37F90AAA05944BB800584C61 /* rightarrow.png in Resources */,
+				37F90AAB05944BB800584C61 /* leftarrow.png in Resources */,
+				37F90AAC05944BB800584C61 /* button wells.tif in Resources */,
+				37F90AAD05944BB800584C61 /* downarrow.png in Resources */,
+				37F90AAE05944BB800584C61 /* uparrow.png in Resources */,
+				37F90AAF05944BB800584C61 /* AboutPanel.nib in Resources */,
+				37F90AB005944BB800584C61 /* Localizable.strings in Resources */,
+				37F90AB105944BB800584C61 /* caution.tif in Resources */,
+				37F90AF705944BB800584C61 /* Vidi Server.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F90AD605944BB800584C61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F90AD705944BB800584C61 /* tuners.plist in Resources */,
+				37F90AD805944BB800584C61 /* Vidi.icns in Resources */,
+				37F90AD905944BB800584C61 /* Palette.nib in Resources */,
+				37F90ADA05944BB800584C61 /* contrast.tif in Resources */,
+				37F90ADB05944BB800584C61 /* brightness.tif in Resources */,
+				37F90ADC05944BB800584C61 /* hue.tif in Resources */,
+				37F90ADD05944BB800584C61 /* saturation.tif in Resources */,
+				37F90ADE05944BB800584C61 /* status problem.tif in Resources */,
+				37F90ADF05944BB800584C61 /* status REC.tif in Resources */,
+				37F90AE005944BB800584C61 /* status timer REC.tif in Resources */,
+				37F90AE105944BB800584C61 /* status timer.tif in Resources */,
+				37F90AE205944BB800584C61 /* status.tif in Resources */,
+				37F90AE305944BB800584C61 /* server.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37F90AB205944BB800584C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F90AB305944BB800584C61 /* main.m in Sources */,
+				37F90AB405944BB800584C61 /* DBVidi.m in Sources */,
+				37F90AB505944BB800584C61 /* DBDVView.m in Sources */,
+				37F90AB605944BB800584C61 /* DBTVChannel.m in Sources */,
+				37F90AB705944BB800584C61 /* DBSlider.m in Sources */,
+				37F90AB805944BB800584C61 /* DBTVRemoteControl.m in Sources */,
+				37F90AB905944BB800584C61 /* DBVidiWindowController.m in Sources */,
+				37F90ABA05944BB800584C61 /* NSDictionary-DBVidiJobAdditions.m in Sources */,
+				37F90ABB05944BB800584C61 /* DBTimerWindowController.m in Sources */,
+				37F90ABC05944BB800584C61 /* DBRadioWindowController.m in Sources */,
+				37F90ABD05944BB800584C61 /* DBMediumWindowController.m in Sources */,
+				37F90ABE05944BB800584C61 /* DBButton.m in Sources */,
+				37F90ABF05944BB800584C61 /* DBVidiAboutPanelController.m in Sources */,
+				37F90AC005944BB800584C61 /* DBAudioCompression.m in Sources */,
+				37F90AC105944BB800584C61 /* DBVidiWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F90AE405944BB800584C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F90AE505944BB800584C61 /* server_main.m in Sources */,
+				37F90AE605944BB800584C61 /* DBDVGrabber.m in Sources */,
+				37F90AE705944BB800584C61 /* audio.c in Sources */,
+				37F90AE805944BB800584C61 /* DBVidiServer.m in Sources */,
+				37F90AE905944BB800584C61 /* DBVidiPaletteController.m in Sources */,
+				37F90AEA05944BB800584C61 /* DBTVChannel.m in Sources */,
+				37F90AEB05944BB800584C61 /* LoginItemAPI.m in Sources */,
+				37F90AEC05944BB800584C61 /* NSDictionary-DBVidiJobAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37F90AF605944BB800584C61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37F90ACD05944BB800584C61 /* Vidi Server */;
+			targetProxy = 37F90AF505944BB800584C61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+				3790FE6604DE922E00000005 /* French */,
+				37F3EC01053EFC9600000005 /* German */,
+				37CC66320A034CB800CE4499 /* sv */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+				3790FE6104DE91E500000005 /* French */,
+				37F3EBFC053EFC5D00000005 /* German */,
+				37CC66230A034C9E00CE4499 /* sv */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		37316CF80544439000000005 /* ReadMe.rtfd */ = {
+			isa = PBXVariantGroup;
+			children = (
+				377EE8F303F3A2FA00000005 /* English */,
+				37316CF90544439000000005 /* German */,
+				3709E096057FC5C800F429CB /* French */,
+				372F606605E54F5A00C24443 /* sv */,
+			);
+			name = ReadMe.rtfd;
+			sourceTree = "<group>";
+		};
+		37330A9B0435C6F900000005 /* server.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37330A990435C6DA00000005 /* English */,
+				3790FE6904DE925100000005 /* French */,
+				37F3EC04053EFCA600000005 /* German */,
+			);
+			name = server.strings;
+			sourceTree = "<group>";
+		};
+		37330A9F0435CCD600000005 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37330A9D0435CCCA00000005 /* English */,
+				3790FE6704DE923500000005 /* French */,
+				37F3EC02053EFC9B00000005 /* German */,
+				37CC66350A034CBB00CE4499 /* sv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		37B0DC2C0434AC2300000005 /* AboutPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B0DC2D0434AC2300000005 /* English */,
+				3790FE6504DE922700000005 /* French */,
+				37F3EC00053EFC8700000005 /* German */,
+				37CC662F0A034CB400CE4499 /* sv */,
+			);
+			name = AboutPanel.nib;
+			sourceTree = "<group>";
+		};
+		37E30BE103FBBF6500000005 /* Radio.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E30BE203FBBF6500000005 /* English */,
+				3790FE6304DE920E00000005 /* French */,
+				37F3EBFE053EFC7900000005 /* German */,
+				37CC66290A034CAC00CE4499 /* sv */,
+			);
+			name = Radio.nib;
+			sourceTree = "<group>";
+		};
+		37E4F55B0408302100000005 /* Palette.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E4F55C0408302100000005 /* English */,
+				3790FE6804DE924B00000005 /* French */,
+				37F3EC03053EFCA000000005 /* German */,
+				37CC66380A034CC200CE4499 /* sv */,
+			);
+			name = Palette.nib;
+			sourceTree = "<group>";
+		};
+		37EDE5CC03FD200B00000005 /* VidiWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37EDE5CD03FD200B00000005 /* English */,
+				3790FE6204DE91F800000005 /* French */,
+				37F3EBFD053EFC7100000005 /* German */,
+				37CC66260A034CA700CE4499 /* sv */,
+			);
+			name = VidiWindow.nib;
+			sourceTree = "<group>";
+		};
+		37FAA389040D218C00000005 /* Timer.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37FAA38A040D218C00000005 /* English */,
+				3790FE6404DE921C00000005 /* French */,
+				37F3EBFF053EFC8000000005 /* German */,
+				37CC662C0A034CB000CE4499 /* sv */,
+			);
+			name = Timer.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		376DED2C0A022DCE008A94F7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Vidi_Prefix.pch;
+				INFOPLIST_FILE = Info_Vidi_Server.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Vidi Server";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-comment",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		376DED2D0A022DCE008A94F7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Vidi_Prefix.pch;
+				INFOPLIST_FILE = Info_Vidi_Server.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Vidi Server";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-comment",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		376DED2E0A022DCE008A94F7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Vidi_Prefix.pch;
+				INFOPLIST_FILE = Info_Vidi_Server.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Vidi Server";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-comment",
+				);
+			};
+			name = Default;
+		};
+		376DED300A022DCE008A94F7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Vidi_Prefix.pch;
+				INFOPLIST_FILE = Info_Vidi.plist;
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Vidi;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-comment",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		376DED310A022DCE008A94F7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Vidi_Prefix.pch;
+				INFOPLIST_FILE = Info_Vidi.plist;
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Vidi;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-comment",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		376DED320A022DCE008A94F7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Vidi_Prefix.pch;
+				INFOPLIST_FILE = Info_Vidi.plist;
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Vidi;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-comment",
+				);
+			};
+			name = Default;
+		};
+		376DED340A022DCE008A94F7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		376DED350A022DCE008A94F7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		376DED360A022DCE008A94F7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		376DED2B0A022DCE008A94F7 /* Build configuration list for PBXNativeTarget "Vidi Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376DED2C0A022DCE008A94F7 /* Development */,
+				376DED2D0A022DCE008A94F7 /* Deployment */,
+				376DED2E0A022DCE008A94F7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		376DED2F0A022DCE008A94F7 /* Build configuration list for PBXNativeTarget "Vidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376DED300A022DCE008A94F7 /* Development */,
+				376DED310A022DCE008A94F7 /* Deployment */,
+				376DED320A022DCE008A94F7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		376DED330A022DCE008A94F7 /* Build configuration list for PBXProject "Vidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376DED340A022DCE008A94F7 /* Development */,
+				376DED350A022DCE008A94F7 /* Deployment */,
+				376DED360A022DCE008A94F7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

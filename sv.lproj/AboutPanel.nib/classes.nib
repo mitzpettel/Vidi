@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showPanel = id; }; 
+            CLASS = DBVidiAboutPanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appIconView = id; 
+                appNameField = id; 
+                infoPanel = id; 
+                legalTextField = id; 
+                tunerTextField = id; 
+                versionField = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

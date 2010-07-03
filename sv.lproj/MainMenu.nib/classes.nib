@@ -1,0 +1,166 @@
+{
+    IBClasses = (
+        {CLASS = DBDVGrabber; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {sgIdleTimer = id; }; 
+            CLASS = DBDVView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSQuickDrawView; 
+        }, 
+        {CLASS = DBSlider; LANGUAGE = ObjC; SUPERCLASS = NSSlider; }, 
+        {
+            CLASS = DBTVRemoteControl; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {vidi = DBVidi; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {
+                changeAudioFormatClicked = id; 
+                changedMoviesDirectory = id; 
+                extendRecordingButtonClicked = id; 
+                openFeedbackWebsite = id; 
+                openVidiWebsite = id; 
+                orderFrontTimerWindow = id; 
+                orderFrontVidiAboutPanel = id; 
+                takeChangeGammaFrom = id; 
+                takeFloatFrom = id; 
+                takeMediumFrom = id; 
+                takeShowStatusItemFrom = id; 
+                takeSplitFrom = id; 
+            }; 
+            CLASS = DBVidi; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                audioFormatTextField = NSTextField; 
+                changeGammaCheckbox = NSButton; 
+                extendRecordingSheet = NSPanel; 
+                extendRecordingTextField = NSTextField; 
+                floatCheckbox = NSButton; 
+                moviesDirectoryPopUp = NSPopUpButton; 
+                splitCheckbox = NSButton; 
+                statusItemCheckbox = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addClicked = id; 
+                endFullScreen = id; 
+                pictureSettingsChanged = id; 
+                record = id; 
+                recordAs = id; 
+                recordButtonClicked = id; 
+                removeClicked = id; 
+                stopRecording = id; 
+                takeChannelCallKeyFrom = id; 
+                takeChannelFrequencyFrom = id; 
+                takeChannelFrom = id; 
+                takeChannelInputFrom = id; 
+                takeChannelLogoFrom = id; 
+                takeChannelNameFrom = id; 
+                takeChannelVolumeFrom = id; 
+                takeMutingFrom = id; 
+                takeVolumeFrom = id; 
+                toggleFullScreen = id; 
+                toggleHighQuality = id; 
+                toggleSettingsDrawer = id; 
+                zoomWindow = id; 
+            }; 
+            CLASS = DBVidiWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addButton = NSButton; 
+                brightnessSlider = NSSlider; 
+                callKeyPopUp = NSPopUpButton; 
+                channelLogoDisplay = NSImageView; 
+                channelNameDisplay = NSTextField; 
+                channelNameTextField = NSTextField; 
+                channelPopUp = NSPopUpButton; 
+                channelVolumeSlider = NSSlider; 
+                channelsTable = NSTableView; 
+                contrastSlider = NSSlider; 
+                frequencyTextField = NSTextField; 
+                fullScrVolumeSlider = NSSlider; 
+                inputPopUp = NSPopUpButton; 
+                logoEditableImageView = NSImageView; 
+                muteButton = NSButton; 
+                popUp = NSView; 
+                recordButton = NSButton; 
+                removeButton = NSButton; 
+                saturationSlider = NSSlider; 
+                settingsDrawer = NSDrawer; 
+                vidi = DBVidi; 
+                view = DBDVView; 
+                volumeSlider = NSSlider; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                orderFrontMaskingPanel = id; 
+                orderFrontTimerWindow = id; 
+                orderFrontVidiAboutPanel = id; 
+                recordAs = id; 
+                stopRecording = id; 
+                takeVideoAspectRatioFrom = id; 
+                toggleDeinterlace = id; 
+                toggleFullScreen = id; 
+                toggleHighQuality = id; 
+                toggleSettingsDrawer = id; 
+                toggleSingleField = id; 
+                zoomWindow = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                channelFrequencyChanged = id; 
+                channelLogoChanged = id; 
+                channelNameChanged = id; 
+                channelSelected = id; 
+                channelVolumeChanged = id; 
+                downVolume = id; 
+                mutingChanged = id; 
+                nextChannel = id; 
+                previousChannel = id; 
+                setFullScreen = id; 
+                setHighQuality = id; 
+                setRecording = id; 
+                toggleFullScreen = id; 
+                toggleMuting = id; 
+                upVolume = id; 
+                volumeChanged = id; 
+            }; 
+            CLASS = MyObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                channelLogoDisplay = NSImageView; 
+                channelLogoView = NSImageView; 
+                channelNameDisplay = NSTextField; 
+                channelNameTextField = NSTextField; 
+                channelPopUp = NSPopUpButton; 
+                channelVolumeSlider = NSSlider; 
+                frequencyTextField = NSTextField; 
+                fullScrVolumeSlider = NSSlider; 
+                grabber = DBDVGrabber; 
+                logoEditableImageView = NSImageView; 
+                muteButton = NSButton; 
+                popUp = NSView; 
+                view = DBDVView; 
+                volumeSlider = NSSlider; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {changeFreq = id; setVolume = id; }; 
+            CLASS = MyQuickDrawView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSQuickDrawView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

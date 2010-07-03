@@ -1,0 +1,165 @@
+{
+    IBClasses = (
+        {CLASS = DBButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = DBDVGrabber; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {sgIdleTimer = id; }; 
+            CLASS = DBDVView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSQuickDrawView; 
+        }, 
+        {
+            ACTIONS = {
+                addClicked = id; 
+                record = id; 
+                recordAs = id; 
+                recordButtonClicked = id; 
+                removeClicked = id; 
+                selectNextChannel = id; 
+                selectPreviousChannel = id; 
+                stopRecording = id; 
+                takeChannelFrequencyFrom = id; 
+                takeChannelFrom = id; 
+                takeMutingFrom = id; 
+                takeVolumeFrom = id; 
+            }; 
+            CLASS = DBMediumWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addButton = NSButton; 
+                channelPopUp = NSPopUpButton; 
+                channelsTable = NSTableView; 
+                frequencyStepper = NSStepper; 
+                frequencyTextField = NSTextField; 
+                muteButton = NSButton; 
+                nextChannelButton = NSButton; 
+                previousChannelButton = NSButton; 
+                recordButton = NSButton; 
+                removeButton = NSButton; 
+                volumeSlider = NSSlider; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = DBSlider; LANGUAGE = ObjC; SUPERCLASS = NSSlider; }, 
+        {
+            CLASS = DBTVRemoteControl; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controller = DBVidiWindowController; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {changedMoviesDirectory = id; }; 
+            CLASS = DBVidi; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {grabber = DBDVGrabber; moviesDirectoryPopUp = NSPopUpButton; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                endFullScreen = id; 
+                orderFrontMaskingPanel = id; 
+                pictureSettingsChanged = id; 
+                takeChannelCallKeyFrom = id; 
+                takeChannelInputFrom = id; 
+                takeChannelLogoFrom = id; 
+                takeChannelNameFrom = id; 
+                takeChannelVolumeFrom = id; 
+                takeMaskingBottomFrom = id; 
+                takeMaskingLeftFrom = id; 
+                takeMaskingRightFrom = id; 
+                takeMaskingTopFrom = id; 
+                takeVideoAspectRatioFrom = id; 
+                toggleDeinterlace = id; 
+                toggleFullScreen = id; 
+                toggleHighQuality = id; 
+                toggleSettingsDrawer = id; 
+                toggleSingleField = id; 
+                zoomWindow = id; 
+            }; 
+            CLASS = DBVidiWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                brightnessSlider = NSSlider; 
+                callKeyPopUp = NSPopUpButton; 
+                channelLogoDisplay = NSImageView; 
+                channelNameDisplay = NSTextField; 
+                channelNameTextField = NSTextField; 
+                channelVolumeSlider = NSSlider; 
+                contrastSlider = NSSlider; 
+                fullScrVolumeSlider = NSSlider; 
+                hueControls = NSView; 
+                hueSlider = NSSlider; 
+                inputPopUp = NSPopUpButton; 
+                logoEditableImageView = NSImageView; 
+                maskBottomStepper = NSStepper; 
+                maskBottomTextField = NSTextField; 
+                maskLeftStepper = NSStepper; 
+                maskLeftTextField = NSTextField; 
+                maskRightStepper = NSStepper; 
+                maskRightTextField = NSTextField; 
+                maskTopStepper = NSStepper; 
+                maskTopTextField = NSTextField; 
+                maskingPanel = NSPanel; 
+                popUp = NSView; 
+                saturationSlider = NSSlider; 
+                settingsButton = NSButton; 
+                settingsDrawer = NSDrawer; 
+                view = DBDVView; 
+            }; 
+            SUPERCLASS = DBMediumWindowController; 
+        }, 
+        {
+            ACTIONS = {toggleFullScreen = id; toggleHighQuality = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                channelFrequencyChanged = id; 
+                channelLogoChanged = id; 
+                channelNameChanged = id; 
+                channelSelected = id; 
+                channelVolumeChanged = id; 
+                downVolume = id; 
+                mutingChanged = id; 
+                nextChannel = id; 
+                previousChannel = id; 
+                setFullScreen = id; 
+                setHighQuality = id; 
+                setRecording = id; 
+                toggleFullScreen = id; 
+                toggleMuting = id; 
+                upVolume = id; 
+                volumeChanged = id; 
+            }; 
+            CLASS = MyObject; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                channelLogoDisplay = NSImageView; 
+                channelLogoView = NSImageView; 
+                channelNameDisplay = NSTextField; 
+                channelNameTextField = NSTextField; 
+                channelPopUp = NSPopUpButton; 
+                channelVolumeSlider = NSSlider; 
+                frequencyTextField = NSTextField; 
+                fullScrVolumeSlider = NSSlider; 
+                grabber = DBDVGrabber; 
+                logoEditableImageView = NSImageView; 
+                muteButton = NSButton; 
+                popUp = NSView; 
+                view = DBDVView; 
+                volumeSlider = NSSlider; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {changeFreq = id; setVolume = id; }; 
+            CLASS = MyQuickDrawView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSQuickDrawView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

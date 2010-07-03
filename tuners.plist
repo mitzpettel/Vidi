@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>192</key>
+	<dict>
+		<key>bands</key>
+		<array>
+			<dict>
+				<key>max freq</key>
+				<integer>157250000</integer>
+				<key>opcode</key>
+				<integer>36512</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>451250000</integer>
+				<key>opcode</key>
+				<integer>36496</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>900000000</integer>
+				<key>opcode</key>
+				<integer>36400</integer>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Philips FM1236 M/N FM-Radio</string>
+		<key>radio</key>
+		<dict>
+			<key>opcode</key>
+			<integer>34980</integer>
+		</dict>
+	</dict>
+	<key>448</key>
+	<dict>
+		<key>bands</key>
+		<array>
+			<dict>
+				<key>max freq</key>
+				<integer>168250000</integer>
+				<key>opcode</key>
+				<integer>52896</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>447250000</integer>
+				<key>opcode</key>
+				<integer>52880</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>900000000</integer>
+				<key>opcode</key>
+				<integer>52784</integer>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Philips FM1216 B/G FM-Radio</string>
+		<key>radio</key>
+		<dict>
+			<key>opcode</key>
+			<integer>34980</integer>
+		</dict>
+	</dict>
+	<key>450</key>
+	<dict>
+		<key>bands</key>
+		<array>
+			<dict>
+				<key>max freq</key>
+				<integer>160000000</integer>
+				<key>opcode</key>
+				<integer>34368</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>442000000</integer>
+				<key>opcode</key>
+				<integer>34370</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>900000000</integer>
+				<key>opcode</key>
+				<integer>34372</integer>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Philips FM1216ME FM Radio</string>
+	</dict>
+	<key>706</key>
+	<dict>
+		<key>bands</key>
+		<array>
+			<dict>
+				<key>max freq</key>
+				<integer>168250000</integer>
+				<key>opcode</key>
+				<integer>52897</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>447250000</integer>
+				<key>opcode</key>
+				<integer>52881</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>900000000</integer>
+				<key>opcode</key>
+				<integer>52785</integer>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Philips FI 1216MF (PAL)</string>
+	</dict>
+	<key>710</key>
+	<dict>
+		<key>bands</key>
+		<array>
+			<dict>
+				<key>max freq</key>
+				<integer>168250000</integer>
+				<key>opcode</key>
+				<integer>52899</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>447250000</integer>
+				<key>opcode</key>
+				<integer>52883</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>900000000</integer>
+				<key>opcode</key>
+				<integer>52787</integer>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Philips FI 1216MF (SECAM)</string>
+	</dict>
+	<key>962</key>
+	<dict>
+		<key>bands</key>
+		<array>
+			<dict>
+				<key>max freq</key>
+				<integer>140250000</integer>
+				<key>opcode</key>
+				<integer>52896</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>463250000</integer>
+				<key>opcode</key>
+				<integer>52880</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>900000000</integer>
+				<key>opcode</key>
+				<integer>52784</integer>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Philips FI 1246 (PAL I) FM-Radio</string>
+		<key>radio</key>
+		<dict>
+			<key>opcode</key>
+			<integer>34980</integer>
+		</dict>
+	</dict>
+	<key>966</key>
+	<dict>
+		<key>bands</key>
+		<array>
+			<dict>
+				<key>max freq</key>
+				<integer>140250000</integer>
+				<key>opcode</key>
+				<integer>52896</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>463250000</integer>
+				<key>opcode</key>
+				<integer>52880</integer>
+			</dict>
+			<dict>
+				<key>max freq</key>
+				<integer>900000000</integer>
+				<key>opcode</key>
+				<integer>52784</integer>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Philips FI 1246 (PAL I)</string>
+	</dict>
+</dict>
+</plist>

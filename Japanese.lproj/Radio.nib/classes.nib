@@ -1,0 +1,67 @@
+{
+    IBClasses = (
+        {CLASS = DBButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {
+            ACTIONS = {
+                addClicked = id; 
+                record = id; 
+                recordAs = id; 
+                recordButtonClicked = id; 
+                removeClicked = id; 
+                selectNextChannel = id; 
+                selectPreviousChannel = id; 
+                stopRecording = id; 
+                takeChannelFrequencyFrom = id; 
+                takeChannelFrom = id; 
+                takeMutingFrom = id; 
+                takeVolumeFrom = id; 
+            }; 
+            CLASS = DBMediumWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addButton = NSButton; 
+                channelPopUp = NSPopUpButton; 
+                channelsTable = NSTableView; 
+                frequencyStepper = NSStepper; 
+                frequencyTextField = NSTextField; 
+                muteButton = NSButton; 
+                nextChannelButton = NSButton; 
+                previousChannelButton = NSButton; 
+                recordButton = NSButton; 
+                removeButton = NSButton; 
+                volumeSlider = NSSlider; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                selectNextChannel = id; 
+                selectPreviousChannel = id; 
+                takeChannelFrequencyFrom = id; 
+                takeChannelFrom = id; 
+                takeMutingFrom = id; 
+                takeVolumeFrom = id; 
+                toggleEditMode = id; 
+            }; 
+            CLASS = DBRadioWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                editModeView = NSView; 
+                frequencyStepper = NSStepper; 
+                frequencyTextField = NSTextField; 
+                muteButton = NSButton; 
+                volumeSlider = NSSlider; 
+            }; 
+            SUPERCLASS = DBMediumWindowController; 
+        }, 
+        {CLASS = DBSlider; LANGUAGE = ObjC; SUPERCLASS = NSSlider; }, 
+        {
+            CLASS = DBTVRemoteControl; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controller = DBMediumWindowController; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
